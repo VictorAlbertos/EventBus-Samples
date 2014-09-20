@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sample_fragments">Event Bus Sample Fragments</string>
+    <string name="sample_activities">Event Bus Sample Activities</string>
+    <string name="app_name">Event Bus Samples</string>
+    <string name="all_receivers">Send event to receivers</string>
+    <string name="to_receiver_1">Send event to receiver 1</string>
+    <string name="to_receiver_2">Send event to receiver 2</string>
+    <string name="to_receiver_3">Send event to receiver 3</string>
+
+</resources>

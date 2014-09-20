@@ -1,0 +1,4 @@
+Change color background root FragmentActivity based on current child Fragment ViewPager (with color animation)
+Move page ViewPager from FragmentActivity
+Number of events sended
+Put white separator main layout
