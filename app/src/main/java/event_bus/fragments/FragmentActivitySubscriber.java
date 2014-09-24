@@ -47,8 +47,8 @@ public class FragmentActivitySubscriber extends FragmentActivity {
         });
     }
 
-    public void onEvent(EventBusFlag eventBusFlag) {
-        if (!eventBusFlag.isEventFor(this)) return;
+    public void onEventMainThread(EventBusFlag eventBusFlag) {
+        if (!eventBusFlag.isReallyEventFor(this)) return;
 
         if(eventBusFlag.getContent() instanceof Integer) {
             Integer colorId = (Integer) eventBusFlag.getContent();
@@ -59,6 +59,7 @@ public class FragmentActivitySubscriber extends FragmentActivity {
             if(!_hasPaused) startService(new Intent(this, ServiceSubscriber.class));
         }
     }
+
 
     @Override
     protected void onResume() {

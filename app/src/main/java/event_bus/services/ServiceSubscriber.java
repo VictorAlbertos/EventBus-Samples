@@ -23,7 +23,7 @@ public class ServiceSubscriber extends IntentService {
         String message = "Waiting from " + ServiceSubscriber.class.getSimpleName() + " "
                 + time + " milliseconds";
 
-        EventBus.getDefault().post(
+        EventBus.getDefault().postSticky(
                 new EventBusFlag(message).setFilterReceiverClass(FragmentActivitySubscriber.class)
         );
     }

@@ -20,6 +20,11 @@ public class EventBusFlag {
         return _receiver == candidate.getClass();
     }
 
+    public boolean isReallyEventFor(Object candidate) {
+        if (_receiver == null) return false;
+        return _receiver == candidate.getClass();
+    }
+
     public String getMessage() {
         return _message;
     }

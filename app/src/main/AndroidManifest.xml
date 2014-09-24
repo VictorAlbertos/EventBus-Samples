@@ -9,18 +9,26 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name="event_bus.activities.ActivityLauncher">
+        <activity
+            android:name="event_bus.activities.ActivityLauncher"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="event_bus.activities.ActivitySubscriber"/>
+        <activity
+            android:name="event_bus.activities.ActivitySubscriber"
+            android:screenOrientation="portrait" />
 
-        <activity android:name="event_bus.activities.ActivityReceiver" />
+        <activity
+            android:name="event_bus.activities.ActivityReceiver"
+            android:screenOrientation="portrait" />
 
-        <activity android:name="event_bus.fragments.FragmentActivitySubscriber"/>
+        <activity
+            android:name="event_bus.fragments.FragmentActivitySubscriber"
+            android:screenOrientation="portrait" />
 
         <service android:name="event_bus.services.ServiceSubscriber" />
 
